@@ -1,0 +1,22 @@
+mixin navigation(navigation) 
+    nav.navigation
+        ul(class='list')
+            each item in navigation
+                li(class=  item.cssClass)
+                    a(href=item.link alt=item.alt)
+                        svg(class=item.svgClass)
+                            use(href="./img/nav-icons/svg-spraits.svg#"+item.src+"-svg")
+
+
+
+                            //- img(src='./img/nav-icons/'+item.src+'.svg')
+
+    //- nav.navigation
+    //-     ul(class='list')
+    //-         each item in navigation
+    //-             if item.cssClass
+    //-                 li(class=  item.cssClass)
+    //-                     a(href=item.link)= item.name 
+    //-             else
+    //-                     li
+    //-                         a(href=item.link)= item.name 

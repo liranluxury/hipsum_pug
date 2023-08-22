@@ -1,0 +1,11 @@
+@import "./vars/var";
+@import "./base/base";
+@import "./base/reset";
+@import "./blocks/btns";
+@import "./blocks/aside_btns";
+@import "./blocks/nav-icons";
+@import "./blocks/pagination";
+// @import "./sections/footer";
+
+@import "./sections/**/*.scss";
+//порядок важен!!

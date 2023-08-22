@@ -1,0 +1,8 @@
+mixin aside-widget(link='#', img, title, info)
+    a(href= link).aside-widget 
+        .aside-widget__img
+            img(src="./img/aside-imgs/" + img, alt= title)
+        h4.aside-widget__title #{title}
+        .aside-widget__info #{info}
+
+

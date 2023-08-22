@@ -1,0 +1,14 @@
+mixin article(title, subtitle, img, link)
+        .article
+            .article_title-wrapper 
+                .article_title 
+                    h2.title #{title}
+                .article_subtitle 
+                    h3.subtitle #{subtitle}
+            .article_img-wrapper 
+                //- img(src= img, alt= alt)
+                img(src="./img/main-imgs/" + img, alt= title)
+            block
+            .article_nav-wrapper
+                +btn-read-more("read more", link) 
+                +navigation(article_nav)

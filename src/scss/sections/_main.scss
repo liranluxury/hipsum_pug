@@ -1,0 +1,7 @@
+.main-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 270px;
+    grid-column-gap: 30px;
+//   display: flex;
+//   column-gap: 30px;
+}

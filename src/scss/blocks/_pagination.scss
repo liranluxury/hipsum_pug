@@ -1,0 +1,30 @@
+.pagination {
+  padding: 40px 0 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.pagination__text-link,
+a.pagination__text-link {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.3;
+  text-transform: uppercase;
+
+  &:hover {
+    color: #e84c50;
+  }
+}
+.pagination__current {
+  display: flex;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.pagination__current * + * {
+  margin-left: 20px;
+}
+.pagination__current-active,
+a.pagination__current-link:hover {
+  color: #e84c50;
+}

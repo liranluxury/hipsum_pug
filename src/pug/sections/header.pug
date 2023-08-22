@@ -1,0 +1,19 @@
+//- include ../mixins/nav_mixin.pug
+
+-
+    var navigation = [
+        {link: '#!', alt: 'instagram', src:'inst', svgClass: 'inst-svg' },
+        {link: '#!', alt: 'twitter', src:'tw',svgClass: 'tw-svg' },
+        {link: '#!', alt: 'facebook', src:'fb',svgClass: 'fb-svg' }
+    ]
+header 
+    .header 
+        +navigation(navigation)
+        h1.logo Hipsum Blog
+        .header_search-nav
+            a(href="#")
+                svg.search-svg 
+                    use(href="./img/nav-icons/svg-spraits.svg#search-svg")
+                //- img(src="./img/nav-icons/search.svg", alt="search", width="26")
+            button.subscribe Subscribe 
+    

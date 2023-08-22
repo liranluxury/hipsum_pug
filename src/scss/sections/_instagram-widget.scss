@@ -1,0 +1,18 @@
+.widget-instagram {
+  padding-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+.widget-instagram__item img {
+  width: 120px;
+  height: 100px;
+  border-radius: 2px;
+  object-fit: cover;
+}
+.widget-instagram__item {
+  transition: all 0.3s ease;
+}
+.widget-instagram__item:hover {
+  transform: scale(1.1);
+}
