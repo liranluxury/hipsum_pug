@@ -1,0 +1,11 @@
+mixin article-inner(title, subtitle, img)
+    .article_inner
+                .article_title-wrapper 
+                    .article_title 
+                        h2.title #{title}
+                    .article_subtitle 
+                        h3.subtitle #{subtitle}
+                .article_img-wrapper 
+                    //- img(src= img, alt= alt)
+                    img(src="./img/main-imgs/" + img, alt= title)
+                block

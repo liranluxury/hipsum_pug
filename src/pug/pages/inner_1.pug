@@ -1,0 +1,41 @@
+extends ../layouts/master_page 
+block variables 
+    - const title = "Inner page";
+
+block content
+    .container_inner
+        .article-inner_wrapper
+            +article-inner(' Austin DIY sriracha polaroid sartorial la croix', 'december 26, 2019 — 5 comments', "img_1.jpg")
+            p.article_text. 
+                Austin DIY sriracha polaroid sartorial la croix. Lorem ipsum dolor amet poke dreamcatcher flexitarian, marfa ennui listicle viral meh squid schlitz try-hard bushwick hammock blog man braid. Kickstarter actually four loko sriracha. Aesthetic meditation vaporware, kogi cold-pressed artisan semiotics craft beer mlkshk godard chia poke. Lomo ethical activated charcoal deep v, iPhone ugh edison bulb lumbersexual typewriter pickled vaporware af four loko hoodie craft beer. YOLO fashion axe vaporware, affogato tote bag godard DIY marfa tilde green juice. Pinterest gluten-free try-hard gochujang.
+            p.article_text.
+                Copper mug wayfarers swag biodiesel hoodie iPhone salvia drinking vinegar, blog deep v. Flannel bicycle rights chicharrones tacos craft beer blog messenger bag. Vexillologist brooklyn wolf raclette celiac readymade gluten-free. Tote bag hella schlitz sartorial. Aesthetic selvage skateboard etsy raclette. Taxidermy austin synth pork belly offal waistcoat.
+                Freegan glossier whatever banh mi lumbersexual affogato pork belly pop-up prism forage swag helvetica 90's XOXO direct trade. Shabby chic distillery bushwick hella food truck. Before they sold out palo santo organic shabby chic four loko farm-to-table 8-bit bitters. Green juice pug migas cloud bread, 90's kickstarter stumptown shabby chic try-hard typewriter. Locavore keffiyeh kickstarter fashion axe vaporware, fam vexillologist chambray +1 gastropub man braid leggings aesthetic literally lumbersexual. Drinking vinegar tattooed enamel pin beard man bun occupy.
+            p.article_text.
+                Tumblr wolf whatever single-origin coffee, unicorn you probably haven't heard of them raw denim narwhal aesthetic gochujang air plant. 8-bit poutine dreamcatcher, mustache artisan subway tile viral. Air plant shoreditch forage selvage, seitan photo booth 3 wolf moon health goth raclette edison bulb wolf. Street art fixie squid distillery live-edge pop-up narwhal. Cray skateboard pour-over actually franzen, venmo echo park tote bag pork belly YOLO meditation disrupt fam. Palo santo YOLO fam succulents put a bird on it. Kogi cardigan art party truffaut small batch, green juice skateboard banh mi seitan organic.
+            p.article_text.
+                Gastropub scenester trust fund skateboard man bun, truffaut pinterest brunch swag whatever hoodie. Wayfarers try-hard crucifix, neutra paleo yr williamsburg. Austin heirloom stumptown migas art party freegan prism cold-pressed air plant tattooed keytar plaid. Kogi craft beer blue bottle tote bag lyft. Banh mi truffaut man bun +1 VHS activated charcoal, everyday carry whatever glossier edison bulb cred blue bottle gastropub. Umami typewriter celiac, blue bottle flexitarian 3 wolf moon flannel pabst gentrify four dollar toast vinyl shabby chic enamel pin cardigan. Trust fund artisan raclette four dollar toast synth, umami scenester.
+
+        .comment 
+            .form__title-wrapper
+                h2.title Comment it:
+            form.comment-form(action="")
+                textarea(class="message-form" name="message" placeholder="Your message")
+                .inform-form-wrapper
+                    .inform-form__item
+                        input(class="form-input" type="text" name="name" placeholder="Your name" required)
+                    .inform-form__item
+                        input(class="form-input" type="email" name="email" placeholder="Email" required)
+                    .inform-form__item
+                        input(class="form-input" type="text" name="homepage" placeholder="Homepage" )
+                .comment-btn-wrapper
+                    button.square-btn(type="submit") comment
+        .other-comments
+            .othercomments__title-wrapper
+                h2.title Other comments:
+            .othercomments__describe
+                +comment("#", "user_1.jpg", "Nina Ricci", "Locavore keffiyeh kickstarter fashion axe vaporware, fam vexillologist chambray +1 gastropub man braid leggings aesthetic literally lumbersexual.")
+                +comment("#", "user.jpg", "Joe Campbel", "Tumblr wolf whatever single-origin coffee, unicorn you probably haven't heard of them raw denim narwhal aesthetic gochujang air plant. ")
+                +comment("#", "user.jpg", "Luke Besson", "Umami typewriter celiac, blue bottle flexitarian 3 wolf moon flannel pabst gentrify four dollar toast vinyl shabby chic enamel pin cardigan.")
+                +comment("#", "user_2.jpg", "Tim Hemdrix", "Wayfarers try-hard crucifix, neutra paleo yr williamsburg. Austin heirloom stumptown migas art party freegan prism cold-pressed air plant tattooed keytar plaid. ")
+                +comment("#", "user_3.jpg", "Walt Bezos", "Before they sold out palo santo organic shabby chic four loko farm-to-table 8-bit bitters. Green juice pug migas cloud bread, 90's kickstarter stumptown shabby chic try-hard typewriter. ")

@@ -1,0 +1,30 @@
+.othercomments__title-wrapper {
+  margin-bottom: 10px;
+}
+.othercomments__describe {
+  margin-bottom: 90px;
+}
+.comment-wrapper {
+  padding: 35px 0 30px;
+  border-bottom: 1px solid #dde2e7;
+}
+.comment__title-wrapper {
+  display: flex;
+  column-gap: 15px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.comment__title-wrapper img {
+  border-radius: 50%;
+}
+.comment__title {
+  color: #375573;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.75;
+}
+.comment__subscribe {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+}

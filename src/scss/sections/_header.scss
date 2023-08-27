@@ -39,6 +39,15 @@ header {
   font-size: 38px;
   line-height: 1.3;
   font-weight: 900;
+  transition: all 0.3s ease;
+}
+.logo:hover {
+  color: #e84c50;
+  transform: scale(1.02);
+}
+.logo:active {
+  position: relative;
+  top: 2px;
 }
 .header_search-nav {
   width: 223px;

@@ -11,8 +11,8 @@
   background-color: #375573;
 }
 
-.btn-read-more,
-a.btn-read-more {
+.square-btn,
+a.square-btn {
   display: inline-block;
   color: #fff;
   font-size: 12px;
@@ -25,13 +25,13 @@ a.btn-read-more {
   background: #375573;
   transition: all 0.3s ease;
 }
-.btn-read-more:hover,
+.square-btn:hover,
 .subscribe:hover {
   transform: scale(1.02);
   background: #2b4662;
   letter-spacing: 1.2px;
 }
-.btn-read-more:active,
+.square-btn:active,
 .subscribe:active {
   position: relative;
   top: 2px;

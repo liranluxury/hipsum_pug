@@ -10,5 +10,5 @@ mixin article(title, subtitle, img, link)
                 img(src="./img/main-imgs/" + img, alt= title)
             block
             .article_nav-wrapper
-                +btn-read-more("read more", link) 
+                +square-btn("read more", link)
                 +navigation(article_nav)

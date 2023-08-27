@@ -1,0 +1,6 @@
+mixin comment(link, img, title, subscribe)
+    a(href= link).comment-wrapper
+        .comment__title-wrapper
+            img(src="./img/users/" + img, alt= title)
+            h5.comment__title  #{title}
+        p.comment__subscribe #{subscribe}
